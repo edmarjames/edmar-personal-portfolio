@@ -68,9 +68,9 @@
 				</div>
 
 				<div class="d-flex justify-content-center justify-content-lg-start my-2">
-					<a href="https://www.linkedin.com/in/edmar-james-bautista-developer/" target="_blank"><i class='bx bxl-linkedin-square socials highlight-text'></i></a>
-					<a href="https://github.com/edmarjames" target="_blank"><i class='bx bxl-github socials highlight-text'></i></a>
-					<a href="mailto:bautista_edmar@yahoo.com" target="_blank"><i class='bx bx-envelope socials highlight-text'></i></a>
+					<a href="https://www.linkedin.com/in/edmar-james-bautista-developer/" title="linkedin" rel="noopener" target="_blank"><i class='bx bxl-linkedin-square socials highlight-text'></i></a>
+					<a href="https://github.com/edmarjames" title="github" rel="noopener" target="_blank"><i class='bx bxl-github socials highlight-text'></i></a>
+					<a href="mailto:bautista_edmar@yahoo.com" title="email" target="_blank"><i class='bx bx-envelope socials highlight-text'></i></a>
 				</div>
 
 				<div class="d-flex flex-column flex-lg-row justify-content-center justify-content-md-start">
@@ -556,16 +556,16 @@
 				<div class="col-lg-4 col-sm-12">
 					<div class="px-2 px-md-5 px-lg-2 mx-5 mx-lg-0 my-4 my-lg-2">
 						<ul>
-							<li><a href="https://www.linkedin.com/in/edmar-james-bautista-developer/" target="_blank"><i class='bx bxl-linkedin-square link-icons highlight-text'></i><span>LinkedIn</span></a></li>
-							<li><a href="https://github.com/edmarjames" target="_blank"><i class='bx bxl-github link-icons highlight-text'></i><span>Github</span></a></li>
-							<li><a href="https://www.facebook.com/edmarjames.bautista" target="_blank"><i class='bx bxl-facebook-square link-icons highlight-text'></i><span>Facebook</span></a></li>
-							<li><a href="https://www.instagram.com/edmarusbautista/" target="_blank"><i class='bx bxl-instagram link-icons highlight-text'></i><span>Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/edmar-james-bautista-developer/" rel="noopener" target="_blank"><i class='bx bxl-linkedin-square link-icons highlight-text'></i><span>LinkedIn</span></a></li>
+							<li><a href="https://github.com/edmarjames" rel="noopener" target="_blank"><i class='bx bxl-github link-icons highlight-text'></i><span>Github</span></a></li>
+							<li><a href="https://www.facebook.com/edmarjames.bautista" rel="noopener" target="_blank"><i class='bx bxl-facebook-square link-icons highlight-text'></i><span>Facebook</span></a></li>
+							<li><a href="https://www.instagram.com/edmarusbautista/" rel="noopener" target="_blank"><i class='bx bxl-instagram link-icons highlight-text'></i><span>Instagram</span></a></li>
 							<li><a href="mailto:bautista_edmar@yahoo.com"><i class='bx bxs-envelope link-icons highlight-text'></i><span>bautista_edmar<span class="d-block d-sm-inline d-md-inline d-lg-block d-xl-inline email-domain">@yahoo.com</span></span></a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="d-flex justify-content-center mt-4 w-100">
-					<h6>Copyright © 2024, All rights reserved</h6>
+					<h6 id="copyright"></h6>
 				</div>
 			</div>
 		</div>
@@ -577,6 +577,13 @@
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 	<!-- End of Bootstrap Script -->
+
+	<!-- Load current date to the copyright heading element -->
+	<script>
+		const currentDate = new Date();
+		const copyRightElement = document.querySelector("#copyright");
+		copyRightElement.innerText = `Copyright © ${currentDate.getFullYear()}, All rights reserved`
+	</script>
 
 	<!-- Animate on scroll -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
