@@ -52,7 +52,7 @@ body {
 }
 
 .navbar-brand {
-	border: 1px solid ##2F394D;
+	border: 1px solid #2F394D;
 }
 
 .navbar-brand:hover{
@@ -63,7 +63,7 @@ body {
 
 /* ------------- LANDING PAGE -------------- */
 .landing-image {
-	background-image: url(./images/me.jpg);
+	background-image: url(./images/my_pictures/me.webp);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right top;
@@ -460,6 +460,10 @@ body {
 .skill-card .sub-header:hover{
 	color: #00C6BC;
 }
+
+#dynamodb_logo {
+	transform: translateX(4%);
+}
 /* ------ END OF SKILL AND TOOLS SECTION -------- */
 
 
@@ -583,7 +587,7 @@ body {
 	}
 }
 
-@media only screen and (max-width: 600px){	
+@media only screen and (max-width: 600px){
 	#contact-page p, .header {
 		font-size: 2.5rem;
 	}
